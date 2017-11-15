@@ -1,0 +1,24 @@
+ApiBundle\Entity\Model:
+    properties:
+        name:
+            - NotBlank:
+                message: "The name should not be blank"
+            - NotNull:
+                message: "The name should not be null"
+
+ApiBundle\Entity\Car:
+    properties:
+        price:
+            - NotBlank:
+                message: "The price should not be blank"
+            - NotNull:
+                message: "The price should not be null"
+            - Range:
+                min: 1
+                minMessage: "The price should be a positive number"
+                invalidMessage: "The price should be a valid number"
+        name:
+            - NotBlank:
+                message: "The name should not be blank"
+            - NotNull:
+                message: "The name should not be null"

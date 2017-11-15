@@ -1,0 +1,8 @@
+models:
+  type: rest
+  resource: ApiBundle\Controller\ModelsController
+
+cars:
+  type:     rest
+  parent:   models
+  resource: ApiBundle\Controller\CarsController
